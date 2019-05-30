@@ -1,0 +1,21 @@
+CREATE TABLE Analytics_Table(  
+ID int IDENTITY(1,1) NOT NULL primary key,  
+Name [varchar](50) NULL,  
+Email [varchar](500) NULL,  
+Country [varchar](50) NULL  
+)
+
+CREATE TABLE Employee_Details(
+	Id int IDENTITY(1,1) NOT NULL Primary key,
+	Name varchar(50) NOT NULL,
+	Age int NOT NULL,
+	Marital_Status varchar(50) NOT NULL,
+	Primary_skills nvarchar(50) NULL,
+	secondary_skills nvarchar(50) NULL
+)
+
+CREATE TABLE Login(
+	Username varchar(50) NULL,
+	Pswd varchar(50) NULL,
+	UserId int IDENTITY(10000,3) NOT NULL Primary key
+)
